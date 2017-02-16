@@ -10,6 +10,10 @@
 		DF64C8571E558C17001E3A6C /* learnMoreIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF64C84D1E558C17001E3A6C /* learnMoreIOS.framework */; };
 		DF64C85C1E558C17001E3A6C /* learnMoreIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF64C85B1E558C17001E3A6C /* learnMoreIOSTests.m */; };
 		DF64C85E1E558C17001E3A6C /* learnMoreIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF64C8501E558C17001E3A6C /* learnMoreIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF64C8691E559165001E3A6C /* SunXpLearnMore1.h in Headers */ = {isa = PBXBuildFile; fileRef = DF64C8671E559165001E3A6C /* SunXpLearnMore1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF64C86A1E559165001E3A6C /* SunXpLearnMore1.m in Sources */ = {isa = PBXBuildFile; fileRef = DF64C8681E559165001E3A6C /* SunXpLearnMore1.m */; };
+		DF64C86D1E559171001E3A6C /* SunXpLearnMore2.h in Headers */ = {isa = PBXBuildFile; fileRef = DF64C86B1E559171001E3A6C /* SunXpLearnMore2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF64C86E1E559171001E3A6C /* SunXpLearnMore2.m in Sources */ = {isa = PBXBuildFile; fileRef = DF64C86C1E559171001E3A6C /* SunXpLearnMore2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		DF64C8561E558C17001E3A6C /* learnMoreIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnMoreIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF64C85B1E558C17001E3A6C /* learnMoreIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learnMoreIOSTests.m; sourceTree = "<group>"; };
 		DF64C85D1E558C17001E3A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF64C8671E559165001E3A6C /* SunXpLearnMore1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunXpLearnMore1.h; sourceTree = "<group>"; };
+		DF64C8681E559165001E3A6C /* SunXpLearnMore1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunXpLearnMore1.m; sourceTree = "<group>"; };
+		DF64C86B1E559171001E3A6C /* SunXpLearnMore2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunXpLearnMore2.h; sourceTree = "<group>"; };
+		DF64C86C1E559171001E3A6C /* SunXpLearnMore2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunXpLearnMore2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				DF64C8501E558C17001E3A6C /* learnMoreIOS.h */,
+				DF64C8671E559165001E3A6C /* SunXpLearnMore1.h */,
+				DF64C8681E559165001E3A6C /* SunXpLearnMore1.m */,
+				DF64C86B1E559171001E3A6C /* SunXpLearnMore2.h */,
+				DF64C86C1E559171001E3A6C /* SunXpLearnMore2.m */,
 				DF64C8511E558C17001E3A6C /* Info.plist */,
 			);
 			path = learnMoreIOS;
@@ -93,7 +105,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF64C86D1E559171001E3A6C /* SunXpLearnMore2.h in Headers */,
 				DF64C85E1E558C17001E3A6C /* learnMoreIOS.h in Headers */,
+				DF64C8691E559165001E3A6C /* SunXpLearnMore1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF64C86A1E559165001E3A6C /* SunXpLearnMore1.m in Sources */,
+				DF64C86E1E559171001E3A6C /* SunXpLearnMore2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +339,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = learnMoreIOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SunXp.learnMoreIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +357,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = learnMoreIOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SunXp.learnMoreIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +404,7 @@
 				DF64C8631E558C17001E3A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF64C8641E558C17001E3A6C /* Build configuration list for PBXNativeTarget "learnMoreIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +413,7 @@
 				DF64C8661E558C17001E3A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
